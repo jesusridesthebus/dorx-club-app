@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dorx Club Application</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Main Dorx</a>
+    </header>
+    <h1>Application, or Something</h1>
+    <main>
+        <h2>Fill This Out 'n Stuff</h2>
+        <form id="dorx-app">
+            <section>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p>
+                    <label for="relation">Relation to a Current Dorx Club Member:</label>
+                    <br>(We check references!)<br>
+                    <select name="relation" id="relation">
+                        <option hidden disabled selected>Select Relation</option>
+                        <option value="bro-in-law">Bro-in-Law</option>
+                        <option value="seester-in-law">Seester-in-Law</option>
+                        <option value="honorary-member">I wish to be considered for Honorary Membership status (requires unanimous vote!!)</option>
+                    </select>
+                </p>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Are You a Dork??</legend>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="dork" id="yes" value="yes">
+     
+                    <label for="yes-2">Yes<sup>2</sup></label>
+                    <input type="radio" name="dork" id="yes-2" value="yes-2">
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Favorite Epic Historical Dorx Club Moment(s)
+                    </legend>
+                    <input type="checkbox" name="historical" id="founding" value="founding">
+                    <label for="founding">Its Founding, July 2001</label>
+
+                    <br><input type="checkbox" name="historical" id="burger-king" value="burger-king">
+                    <label for="burger-king">Burger King Crowns Outing</label>
+
+                    <br><input type="checkbox" name="historical" id="ken-griffey" value="ken-griffey">
+                    <label for="ken-griffey">Ken Griffey Jr</label>
+
+                    <br><input type="checkbox" name="historical" id="detroit" value="detroit">
+                    <label for="detroit">Detroit Lake Road Trip</label>
+                    
+                    <br><input type="checkbox" name="historical" id="stupid" value="stupid">
+                    <label for="stupid">YOOOOOO STUPID</label>
+                </fieldset>
+            </section>
+                
+
+
+        </form>
+    </main>
+    <footer></footer>
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>
