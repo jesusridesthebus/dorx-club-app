@@ -1,21 +1,13 @@
 const dorxForm = document.getElementById('dorx-form');
 const usersName = document.getElementById('name');
 const relation = document.getElementById('relation');
-const yes = document.getElementById('yes');
-const yes2 = document.getElementById('yes-2');
 const historical = document.getElementById('historical');
+const radioButtons = document.getElementsByName('dork');
 
-yes.addEventListener('change', function() {
-    yes.checked;
-});
-
-yes2.addEventListener('change', function() {
-    yes2.checked;
-});
 
 dorxForm.addEventListener('submit', function(event) {
     event.preventDefault();
-
+console.log(radioButtons[0].checked);
     const historical = [];
     for(let index = 0; index < dorxForm.historical.length; index++) {
         const hist = dorxForm.historical[index];
@@ -23,10 +15,19 @@ dorxForm.addEventListener('submit', function(event) {
             historical[index] = hist.value;
         }
     }
+
+    let dork = null;
+
+    for(let index = 0; index < radioButtons.length; index++) {
+        const radioButton = radioButtons[index];
+        if(radioButton.checked) {
+            dork = radioButton.value;
+        }
+    }
     const applicant = {
         name: usersName.value,
         relation: relation.value,
-        //yes
+        dork: dork,
         historical: historical
     };
 

@@ -1,6 +1,6 @@
 const name = document.getElementById('name');
 const relation = document.getElementById('relation');
-const status = document.getElementById('status');
+const dork = document.getElementById('dork');
 const historical = document.getElementById('historical');
 
 const jsonString = window.localStorage.getItem('applicants');
@@ -34,5 +34,5 @@ else {
 
 name.textContent = applicant.name;
 relation.textContent = applicant.relation;
-status.textContent = applicant.status;
+dork.textContent = applicant.dork;
 historical.textContent = applicant.historical.join(' ');
