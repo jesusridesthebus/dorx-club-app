@@ -24,5 +24,5 @@ for(let index = 0; index < applicants.length; index++) {
     tr.appendChild(tdRelation);
     tdRelation.textContent = applicant.relation;
 
-    const td
+    //const td
 }

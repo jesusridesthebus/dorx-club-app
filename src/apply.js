@@ -1,21 +1,21 @@
 const dorxForm = document.getElementById('dorx-form');
 const usersName = document.getElementById('name');
 const relation = document.getElementById('relation');
-const historical = document.getElementById('historical');
+//const historical = document.getElementById('historical');
 const radioButtons = document.getElementsByName('dork');
 
 
 dorxForm.addEventListener('submit', function(event) {
     event.preventDefault();
-console.log(radioButtons[0].checked);
+
     const historical = [];
     for(let index = 0; index < dorxForm.historical.length; index++) {
         const hist = dorxForm.historical[index];
         if(hist.checked) {
-            historical[index] = hist.value;
+            historical.push(hist.value);
         }
     }
-
+   
     let dork = null;
 
     for(let index = 0; index < radioButtons.length; index++) {
