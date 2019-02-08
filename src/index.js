@@ -1,9 +1,17 @@
 const dorxForm = document.getElementById('dorx-form');
 const usersName = document.getElementById('name');
 const relation = document.getElementById('relation');
-const dorkYes = document.getElementById('dork-yes');
-const dorkNo = document.getElementById('dork-no');
+const yes = document.getElementById('yes');
+const yes2 = document.getElementById('yes-2');
 const historical = document.getElementById('historical');
+
+yes.addEventListener('change', function() {
+    yes.checked;
+});
+
+yes2.addEventListener('change', function() {
+    yes2.checked;
+});
 
 dorxForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -15,14 +23,10 @@ dorxForm.addEventListener('submit', function(event) {
             historical[index] = hist.value;
         }
     }
-
-//event listeners for yes and no buttons
-
-
     const applicant = {
         name: usersName.value,
         relation: relation.value,
-        status: dork.value,
+        //yes
         historical: historical
     };
 
