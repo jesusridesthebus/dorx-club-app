@@ -24,5 +24,11 @@ for(let index = 0; index < applicants.length; index++) {
     tr.appendChild(tdRelation);
     tdRelation.textContent = applicant.relation;
 
-    //const td
+    const tdDork = document.createElement('td');
+    tr.appendChild(tdDork);
+    tdDork.textContent = applicant.dork;
+
+    const tdHistorical = document.createElement('td');
+    tr.appendChild(tdHistorical);
+    tdHistorical.textContent = applicant.historical.join(' ');
 }
