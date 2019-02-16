@@ -35,4 +35,4 @@ else {
 name.textContent = applicant.name;
 relation.textContent = applicant.relation;
 dork.textContent = applicant.dork;
-historical.textContent = applicant.historical.join(' ');
+historical.textContent = applicant.historical.join(', ');
